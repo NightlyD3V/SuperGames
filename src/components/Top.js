@@ -84,7 +84,7 @@ export const Top = () => {
                                     </Spring>
                                     <br></br>
                                 </TextContainer>
-                                <Button href="https://pioneer.app/join/GhostZero" style={{width: '60%'}}>Learn More</Button> 
+                                <Button href="https://pioneer.app/join/GhostZero" style={{width: '40%'}}>Learn More</Button> 
                             </Card>
                         </TopContainer>
                     </div>
