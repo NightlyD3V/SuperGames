@@ -4,10 +4,11 @@ import './App.css';
 import { Navbar } from './components/Navbar';
 import { Top } from './components/Top';
 import { Footer } from './components/Footer';
+import TheGame from './components/TheGame';
 //images 
 import depression from './images/depression.jpg';
 //Routing
-import { Route, Link,  } from 'react-router-dom';
+import { Route, Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const Hero = styled.img`
@@ -28,9 +29,10 @@ class App extends Component {
     return (
       <div className="App">
         <Navbar />
-        <Hero src={depression} />
-        <Top />
-        <Footer />
+        <Hero src={depression}/>
+        <Footer/>
+        <Route exact path='/' component={Top} />
+        <Route exact path='/game' component={TheGame} />
       </div>
     );
   }

@@ -1,6 +1,8 @@
 import React from 'react';
 //import GitHub
 import GitHub from '../images/github.svg';
+//routing
+import { Route, Link } from 'react-router-dom';
 //Material UI
 import AppBar from '@material-ui/core/AppBar';
 //Styled Components 
@@ -39,6 +41,12 @@ export const Navbar = () => {
             <NavContainer>
                 <Logo>Super();</Logo>
                 <LinkContainer>
+                    <Link 
+                        style={{ marginRight: '10px', textDecoration: 'none'}}
+                        to="/">Home</Link>
+                    <Link 
+                        style={{ marginRight: '10px', textDecoration: 'none'}}
+                        to="/game">Game</Link>
                     <a href="https://github.com/NightlyD3V"><GitHubLogo src={GitHub} /></a>
                 </LinkContainer>
             </NavContainer>
