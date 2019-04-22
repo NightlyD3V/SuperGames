@@ -32,7 +32,7 @@ class App extends Component {
         <Hero src={depression}/>
         <Footer/>
         <Route exact path='/' component={Top} />
-        <Route exact path='/game' component={TheGame} />
+        <Route path='/game' component={TheGame} />
       </div>
     );
   }
